@@ -5,6 +5,7 @@ from .employees import Employees
 from .invoices import Invoices
 from .payment_methods import PaymentMethods
 from .services import Services
+from .users import Users
 
 
 class HelloCashClient:
@@ -18,6 +19,7 @@ class HelloCashClient:
         self.invoices = Invoices(self)
         self.payment_methods = PaymentMethods(self)
         self.services = Services(self)
+        self.users = Users(self)
 
     def _request(self, method, endpoint, data=None, params=None):
         url = f"{self.BASE_URL}{endpoint}"
