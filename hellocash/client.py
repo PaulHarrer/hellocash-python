@@ -1,4 +1,5 @@
 import requests
+from .cash_book import CashBook
 from .employees import Employees
 from .invoices import Invoices
 from .payment_methods import PaymentMethods
@@ -9,6 +10,7 @@ class HelloCashClient:
 
     def __init__(self, api_token):
         self.api_token = api_token
+        self.cash_book = CashBook(self)
         self.employees = Employees(self)
         self.invoices = Invoices(self)
         self.payment_methods = PaymentMethods(self)
