@@ -16,11 +16,6 @@ setup(
     install_requires=[
         "requests"
     ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: AGPL-3.0 License",
-        "Operating System :: OS Independent",
-    ],
     project_urls={
         "GitHub": "https://github.com/PaulHarrer/hellocash-python",
     },

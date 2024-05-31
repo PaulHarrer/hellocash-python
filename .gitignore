@@ -1,0 +1,8 @@
+# Packages
+bin
+develop-eggs
+dist
+*.egg-info
+.env
+.installed.cfg
+.pypirc
