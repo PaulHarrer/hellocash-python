@@ -1,6 +1,7 @@
 import requests
 from .employees import Employees
 from .invoices import Invoices
+from .payment_methods import PaymentMethods
 
 
 class HelloCashClient:
