@@ -11,6 +11,7 @@ class HelloCashClient:
         self.api_token = api_token
         self.employees = Employees(self)
         self.invoices = Invoices(self)
+        self.payment_methods = PaymentMethods(self)
 
     def _request(self, method, endpoint, data=None, params=None):
         url = f"{self.BASE_URL}{endpoint}"
